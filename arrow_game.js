@@ -98,6 +98,7 @@ function getWinningFields() {
    UI updates 
    =============== */
 const IMAGE_URLS = ["images/empty.png", "images/left.png", "images/right.png"];
+const IMAGE_ALTS = [" ", "<", ">"];
 let uiBlocks;
 
 function uiInit() {
@@ -110,6 +111,7 @@ function uiInit() {
 function uiRedraw() {
   for (let i=0; i < NO_FIELDS; i++) {
     uiBlocks[i].src = IMAGE_URLS[board[i]];
+    uiBlocks[i].alt = IMAGE_ALTS[board[i]];
   }
 }
 
