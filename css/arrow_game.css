@@ -1,0 +1,27 @@
+.block {
+    width: 64px;
+    height: 64px;
+    float: left;
+}
+
+.blocked {
+    background-color: red;
+}
+
+.hint {
+    background-color: green;
+}
+
+@media screen and (max-width: 780px) {
+  .block {
+      width: 48px;
+      height: 48px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .block {
+      width: 32px;
+      height: 32px;
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The arrow game</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/arrow_game.css">
+
+  <link rel="icon" type="image/png" href="images/right.png">
+
+  <script src="arrow_game.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>The arrow game</h1>
+    <p>Move all the right pointing arrows to the right-most side and the left pointing arrows to the left-most side. 
+    An arrow can slide to the empty space, or jump over an opposing arrow to the empty space.</p>
+    <p>Click on an arrow to move it.</p>
+    <div class="row"><img id="0" class="block" src="images/left.png"><img id="1" class="block" src="images/right.png"><img id="2" class="block" src="images/right.png"><img id="3" class="block" src="images/right.png"><img id="4" class="block" src="images/empty.png"><img id="5" class="block" src="images/left.png"><img id="6" class="block" src="images/left.png"><img id="7" class="block" src="images/left.png"><img id="8" class="block" src="images/left.png"></div>
+    <p></p>
+    <div class="row">
+      <button id="newgame">New game</button><button id="undo">Undo last move</button><button id="hint">Hint</button>
+    </div>
+  </div>
+</body>
+</html>
